@@ -1,21 +1,20 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
 import javax.swing.JFileChooser;
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import javax.swing.JFileChooser;
-
-/*
- * @author: Samantha Duarte 16256
- * @author: Michelle Bloomfield 16803
+/**
+ * @author Samantha Duarte 16256
+ * @author Michelle Bloomfield Fong 16803
+ *
  */
 public class Principal {
-
 	
-String lectura() throws IOException throws IOException{
+	public static void main(String[] args) throws IOException {
+
+		
+	}
+	//Metodo para leer los archivos .txt
+	String lectura() throws IOException{
 		
 		
 		String a = null; 
@@ -32,4 +31,5 @@ String lectura() throws IOException throws IOException{
 	
 		
 	}
+
 }

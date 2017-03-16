@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import javax.swing.JFileChooser;
+import java.util.Scanner;
 /**
  * @author Samantha Duarte 16256
  * @author Michelle Bloomfield Fong 16803
@@ -10,7 +11,14 @@ import javax.swing.JFileChooser;
 public class Principal {
 	
 	public static void main(String[] args) throws IOException {
-
+		
+		switch(flag)
+		  Scanner scanner = new Scanner(System.in); 
+		  System.out.println("Ingrese la palabra en ingles: ");
+		  String x = scanner.nextLine();
+		  System.out.println("Ingrese la palabra en español: ");
+		  String y = scanner.nextLine();
+		  
 		
 	}
 	//Metodo para leer los archivos .txt

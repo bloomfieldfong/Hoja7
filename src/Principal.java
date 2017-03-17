@@ -12,7 +12,8 @@ public class Principal {
 	
 	public static void main(String[] args) throws IOException {
 		
-		switch(flag)
+		
+		
 		  Scanner scanner = new Scanner(System.in); 
 		  System.out.println("Ingrese la palabra en ingles: ");
 		  String x = scanner.nextLine();

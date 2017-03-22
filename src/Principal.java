@@ -20,6 +20,26 @@ public class Principal {
 		  System.out.println("Ingrese la palabra en español: ");
 		  String y = scanner.nextLine();
 		  
+		  Association [] classesTaken = new Association[5];
+	      classesTaken[0] = new Association(x, y);
+	      classesTaken[1] = new Association("Barbara", new Integer(1));
+	      classesTaken[2] = new Association("Bill", new Integer(3));
+	      classesTaken[3] = new Association("Duane", new Integer(2));
+	      classesTaken[4] = new Association("Tom", new Integer(1));
+
+	      
+	      
+	      //print out each item in the array
+	      for (int i = 0; i< classesTaken.length; i++){
+	    	  x = (String) classesTaken[i].getKey()+", "+classesTaken[i].getValue();
+	    	  BinaryTree<String> RESheldon = new BinaryTree<String>(x);
+	    	  System.out.println(REsheldon.value());
+	      }
+	      
+	      
+         
+		  
+		  
 		
 	}
 	//Metodo para leer los archivos .txt

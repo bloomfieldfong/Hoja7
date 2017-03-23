@@ -1,5 +1,5 @@
 
-public class Nodo <E>{
+public class Nodo<E>{
 
 	public Nodo<E> Right;
 	public Nodo<E> Left; 

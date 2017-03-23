@@ -40,8 +40,6 @@ public class Principal {
 	      
 	      
 	      //print out each item in the array
-	      BinaryTree arbol = new BinaryTree();
-	      arbol.setValue(palabra[1]);
 	      
 	      for(int i=1; i<=9; i++){
 	    	  System.out.println(palabra[i].getKey());

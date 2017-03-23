@@ -14,9 +14,7 @@ public class Principal {
 		
 		Principal s = new Principal();
 		 
-		String hola= s.lectura();
-		Comparacion calc= new Comparacion(hola);
-		System.out.println(calc.operar(hola));
+
 		
 		  Scanner scanner = new Scanner(System.in); 
 		  System.out.println("Ingrese la palabra en ingles: ");
@@ -29,22 +27,24 @@ public class Principal {
 		  el diccionario */
 		  Association [] palabra = new Association[10];
 		  
-		  	  palabra[1] = new Association("hi", "hola");
+		  	  palabra[0] = new Association("hi", "hola");
 		  	  palabra[1] = new Association("dog", "perro");
 		      palabra[2] = new Association("woman", "mujer");
 		      palabra[3] = new Association("men", "hombre");
 		      palabra[4] = new Association("yes", "si");
 		      palabra[5] = new Association("no", "no");
 		      palabra[6] = new Association("eat", "comer");
-		      palabra[7] = new Association("town", "peublo");
+		      palabra[7] = new Association("town", "pueblo");
 		      palabra[8] = new Association("homework", "tarea");
 		      palabra[9] = new Association("study", "estudiar");
 	      
 	      
 	      //print out each item in the array
-	      for (int i = 0; i< palabra.length; i++){
-	    	  x = (String) palabra[i].getKey()+", "+palabra[i].getValue();
-	    	  BinaryTree<String> RESheldon = new BinaryTree<String>(x);
+	      BinaryTree arbol = new BinaryTree();
+	      arbol.setValue(palabra[1]);
+	      
+	      for(int i=1; i<=9; i++){
+	    	  System.out.println(palabra[i].getKey());
 	    	 
 	      }
 	}

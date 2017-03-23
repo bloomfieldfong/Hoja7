@@ -6,7 +6,7 @@ public class Comparacion {
 		
 	}
 	
-	public double operar(String n){
+	public String operar(String n){
 		String datos[]= n.split(" ");
 		int x = 0;
 		

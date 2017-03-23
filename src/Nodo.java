@@ -17,6 +17,16 @@ public class Nodo <E>{
 		Left = new Nodo<E>(x);
 	}
 	
-	public 
+	public E getValue(){
+		return data;
+	}
+	
+	public Nodo<E> getRight(){
+		return Right;
+	}
+	
+	public Nodo<E> getLeft(){
+		return Left;
+	}
 	
 }

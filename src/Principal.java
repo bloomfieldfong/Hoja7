@@ -12,7 +12,11 @@ public class Principal {
 	
 	public static void main(String[] args) throws IOException {
 		
-		
+		Principal s = new Principal();
+		 
+		String hola= s.lectura();
+		Comparacion calc= new Comparacion(hola);
+		System.out.println(calc.operar(hola));
 		
 		  Scanner scanner = new Scanner(System.in); 
 		  System.out.println("Ingrese la palabra en ingles: ");
@@ -20,27 +24,29 @@ public class Principal {
 		  System.out.println("Ingrese la palabra en español: ");
 		  String y = scanner.nextLine();
 		  
-		  Association [] classesTaken = new Association[5];
-	      classesTaken[0] = new Association(x, y);
-	      classesTaken[1] = new Association("Barbara", new Integer(1));
-	      classesTaken[2] = new Association("Bill", new Integer(3));
-	      classesTaken[3] = new Association("Duane", new Integer(2));
-	      classesTaken[4] = new Association("Tom", new Integer(1));
-
+		  
+		  /* se agregaran unas palabras x para que se pueda implementa la 
+		  el diccionario */
+		  Association [] palabra = new Association[10];
+		  
+		  	  palabra[1] = new Association("hi", "hola");
+		  	  palabra[1] = new Association("dog", "perro");
+		      palabra[2] = new Association("woman", "mujer");
+		      palabra[3] = new Association("men", "hombre");
+		      palabra[4] = new Association("yes", "si");
+		      palabra[5] = new Association("no", "no");
+		      palabra[6] = new Association("eat", "comer");
+		      palabra[7] = new Association("town", "peublo");
+		      palabra[8] = new Association("homework", "tarea");
+		      palabra[9] = new Association("study", "estudiar");
 	      
 	      
 	      //print out each item in the array
-	      for (int i = 0; i< classesTaken.length; i++){
-	    	  x = (String) classesTaken[i].getKey()+", "+classesTaken[i].getValue();
+	      for (int i = 0; i< palabra.length; i++){
+	    	  x = (String) palabra[i].getKey()+", "+palabra[i].getValue();
 	    	  BinaryTree<String> RESheldon = new BinaryTree<String>(x);
-	    	  System.out.println(REsheldon.value());
+	    	 
 	      }
-	      
-	      
-         
-		  
-		  
-		
 	}
 	//Metodo para leer los archivos .txt
 	String lectura() throws IOException{

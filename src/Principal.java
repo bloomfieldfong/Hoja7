@@ -13,6 +13,9 @@ public class Principal {
 	public static void main(String[] args) throws IOException {
 		
 		Principal s = new Principal();
+		Holi texto = new Holi();
+		
+		System.out.println(texto.leerTexto());
 		 
 		  Scanner scanner = new Scanner(System.in); 
 		  System.out.println("Ingrese la palabra en ingles: ");
@@ -38,23 +41,6 @@ public class Principal {
 	      
 	     
 	}
-	//Metodo para leer los archivos .txt
-	String lectura() throws IOException{
-		
-		
-		String a = null; 
-		
-		JFileChooser archivo = new JFileChooser();
-		archivo.showOpenDialog(null);
-		BufferedReader reader = new BufferedReader(new FileReader(archivo.getSelectedFile().getPath()));
-		
-		while(reader.ready()){
-			a = reader.readLine();
-			return a;
-		}
-		return a;
 	
-		
-	}
 
 }

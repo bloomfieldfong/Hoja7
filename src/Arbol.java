@@ -1,4 +1,10 @@
 
+/**
+ * @author Michelle Bloomfield
+ * @author Samantha Duarte
+ * Metodos tomados de: http://algorithms.tutorialhorizon.com/binary-search-tree-complete-implementation/
+ * 
+ */
 public class Arbol <E extends Comparable<E>>{
 	
 	public Nodo<E> raiz;
@@ -12,7 +18,8 @@ public class Arbol <E extends Comparable<E>>{
 		this.raiz = raiz;
 	}
 	
-	public E find(E id) {
+	//Metodo que nos busca en el arbol 
+	public E buscar(E id) {
 		Nodo<E> current = raiz;
 		while (current != null) {
 			if (current.data.equals(id)) {
@@ -25,5 +32,43 @@ public class Arbol <E extends Comparable<E>>{
 		}
 		return null;
 	}
+	//Inserta un dato en nuestro arbol
+	public void insert(E id) {
+		Nodo<E> newNode = new Nodo<E>(id);
+		if (raiz == null) {
+			raiz = newNode;
+			return;
+		}
+		Nodo<E> current = raiz;
+		Nodo<E> parent = null;
+		while (true) {
+			parent = current;
+			if (current.data.compareTo(id) > 0) {
+				current = current.Left;
+				if (current == null) {
+					parent.Left = newNode;
+					return;
+				}
+			} else {
+				current = current.Right;
+				if (current == null) {
+					parent.Right = newNode;
+					return;
+				}
+			}
+		}
+	}
+	//Nos muestra que hay en nuestro nodo
+	public void display(Nodo<E> root) {
+		if (root != null) {
+			display(root.Left);
+			System.out.print(" " + root.data);
+			display(root.Right);
+		}
+	}
+	
+	
 
+
+	
 }

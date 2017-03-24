@@ -14,8 +14,6 @@ public class Principal {
 		
 		Principal s = new Principal();
 		 
-
-		
 		  Scanner scanner = new Scanner(System.in); 
 		  System.out.println("Ingrese la palabra en ingles: ");
 		  String x = scanner.nextLine();
@@ -40,7 +38,7 @@ public class Principal {
 	      
 	      
 	      //print out each item in the array
-	      
+
 	      for(int i=1; i<=9; i++){
 	    	 palabra[i].getKey();
 	    	 

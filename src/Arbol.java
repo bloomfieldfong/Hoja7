@@ -1,10 +1,14 @@
 
-public class Arbol {
+public class Arbol <E extends Nodo<E>>{
 	
-	public Nodo Raiz;
-	
-	public Nodo getRaiz(){
-		return Raiz;
+	public Nodo<E> raiz;
+
+	public Nodo<E> getRaiz(){
+		return raiz;
 		
+	}
+	
+	public void setRaiz(Nodo<E> raiz){
+		this.raiz = raiz;
 	}
 }

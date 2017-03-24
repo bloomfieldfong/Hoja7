@@ -12,16 +12,10 @@ public class Principal {
 	
 	public static void main(String[] args) throws IOException {
 		
-		Principal s = new Principal();
 		Holi texto = new Holi();
-		
-		System.out.println(texto.leerTexto());
-		 
-		  Scanner scanner = new Scanner(System.in); 
-		  System.out.println("Ingrese la palabra en ingles: ");
-		  String x = scanner.nextLine();
-		  System.out.println("Ingrese la palabra en español: ");
-		  String y = scanner.nextLine();
+	
+		Arbol<Association<String, String>> arbol = new Arbol<>();
+		texto.leerTexto(arbol);
 		  
 		  
 		  /* se agregaran unas palabras x para que se pueda implementa la 

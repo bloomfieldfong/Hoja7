@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Holi {
 
-	public String leerTexto() throws IOException {
+	public String leerTexto(Arbol<Association<String,String>> arbol) throws IOException {
 		// TODO Auto-generated constructor stub
 		// Para leer del archivo de texto
 		
@@ -20,5 +20,8 @@ public class Holi {
 		
 		return stringBuffer.toString();
 	}
+	
+	
+	
 }
 

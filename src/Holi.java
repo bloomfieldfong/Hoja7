@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Holi {
 
-	public String leerTexto(Arbol<Association<String,String>> arbol) throws IOException {
+	public String leerTexto() throws IOException {
 		// TODO Auto-generated constructor stub
 		// Para leer del archivo de texto
 		
@@ -21,7 +21,16 @@ public class Holi {
 		return stringBuffer.toString();
 	}
 	
-	
-	
+	public String traduccion(String text){
+		String traduccion = "";
+		text = text.toLowerCase();
+		String texto[] = text.split("\\s*");
+		
+		
+		return traduccion;
+		
+		
+	}
 }
 
+	

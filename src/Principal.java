@@ -15,7 +15,7 @@ public class Principal {
 		Holi texto = new Holi();
 	
 		Arbol<Association<String, String>> arbol = new Arbol<>();
-		texto.leerTexto(arbol);
+		
 		  
 		  
 		  /* se agregaran unas palabras x para que se pueda implementa la 

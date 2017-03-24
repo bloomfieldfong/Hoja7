@@ -36,13 +36,7 @@ public class Principal {
 		      palabra[8] = new Association("homework", "tarea");
 		      palabra[9] = new Association("study", "estudiar");
 	      
-	      
-	      //print out each item in the array
-
-	      for(int i=1; i<=9; i++){
-	    	 palabra[i].getKey();
-	    	 
-	      }
+	     
 	}
 	//Metodo para leer los archivos .txt
 	String lectura() throws IOException{

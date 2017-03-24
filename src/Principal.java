@@ -42,7 +42,7 @@ public class Principal {
 	      //print out each item in the array
 	      
 	      for(int i=1; i<=9; i++){
-	    	  System.out.println(palabra[i].getKey());
+	    	 palabra[i].getKey();
 	    	 
 	      }
 	}

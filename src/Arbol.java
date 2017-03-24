@@ -19,6 +19,10 @@ public class Arbol <E extends Comparable<E>>{
 	}
 	
 	//Metodo que nos busca en el arbol 
+	/**
+	 * @param id
+	 * @return
+	 */
 	public E buscar(E id) {
 		Nodo<E> current = raiz;
 		while (current != null) {
@@ -33,6 +37,9 @@ public class Arbol <E extends Comparable<E>>{
 		return null;
 	}
 	//Inserta un dato en nuestro arbol
+	/**
+	 * @param id
+	 */
 	public void insert(E id) {
 		Nodo<E> newNode = new Nodo<E>(id);
 		if (raiz == null) {
@@ -59,6 +66,9 @@ public class Arbol <E extends Comparable<E>>{
 		}
 	}
 	//Nos muestra que hay en nuestro nodo
+	/**
+	 * @param root
+	 */
 	public void display(Nodo<E> root) {
 		if (root != null) {
 			display(root.Left);

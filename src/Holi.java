@@ -1,9 +1,8 @@
-import java.util.Scanner;
 import java.io.*;
 
 public class Holi {
 
-	public String leerTexto() throws IOException {
+	public void leerTexto() throws IOException {
 		// TODO Auto-generated constructor stub
 		// Para leer del archivo de texto
 		
@@ -18,19 +17,18 @@ public class Holi {
 		}
 		fileReader.close();
 		
-		return stringBuffer.toString();
+		String x = stringBuffer.toString();
+		String texto[] = x.split("\\s*");
+		System.out.println(texto);
+		
+		
+		
+		
+			
+		
 	}
 	
-	public String traduccion(String text){
-		String traduccion = "";
-		text = text.toLowerCase();
-		String texto[] = text.split("\\s*");
-		
-		
-		return traduccion;
-		
-		
-	}
+
 }
 
 	

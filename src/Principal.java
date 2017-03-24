@@ -13,6 +13,7 @@ public class Principal {
 	public static void main(String[] args) throws IOException {
 		
 		Holi texto = new Holi();
+		texto.leerTexto();
 	
 		Arbol<Association<String, String>> arbol = new Arbol<>();
 		

@@ -6,6 +6,10 @@ public class Association<K extends Comparable<K>,V> implements Comparable<Associ
     
     protected V theValue; 
   
+    /**
+     * @param key
+     * @param value
+     */
     public Association(K key, V value){
         
         theKey = key;
@@ -13,11 +17,17 @@ public class Association<K extends Comparable<K>,V> implements Comparable<Associ
     }
 
 
+    /**
+     * @param key
+     */
     public Association(K key){
         this(key,null);
     }
 
   
+    /* (non-Javadoc)
+     * @see java.lang.Object#equals(java.lang.Object)
+     */
     public boolean equals(Object other){
         Association otherAssoc = (Association)other;
         return getKey().equals(otherAssoc.getKey());
@@ -39,6 +49,10 @@ public class Association<K extends Comparable<K>,V> implements Comparable<Associ
     }
 
 
+    /**
+     * @param value
+     * @return
+     */
     public V setValue(V value){
         V oldValue = theValue;
         theValue = value;
@@ -52,6 +66,9 @@ public class Association<K extends Comparable<K>,V> implements Comparable<Associ
         return s.toString();
     }
     
+    /* (non-Javadoc)
+     * @see java.lang.Comparable#compareTo(java.lang.Object)
+     */
     public int compareTo(Association<K, V> arg0) {
 		return theKey.compareTo(arg0.getKey());
 	}
